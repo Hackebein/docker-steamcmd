@@ -1,0 +1,1 @@
+docker run hackebein/steamcmd +login anonymous +quit
