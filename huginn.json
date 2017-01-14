@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "name": "steamcmd",
+  "description": "No description provided",
+  "source_url": false,
+  "guid": "be6bacec52635246278208fff0e3420c",
+  "tag_fg_color": "#ffffff",
+  "tag_bg_color": "#5bc0de",
+  "icon": "gear",
+  "exported_at": "2017-01-14T12:44:12Z",
+  "agents": [
+    {
+      "type": "Agents::PostAgent",
+      "name": "Docker Hub build steamcmd latest",
+      "disabled": false,
+      "guid": "1e7f09e5b40e1818f91a528ebed801df",
+      "options": {
+        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/e921c7f3-69db-45a3-81de-b743a97e7d08/",
+        "expected_receive_period_in_days": "1",
+        "content_type": "json",
+        "method": "post",
+        "payload": {
+          "docker_tag": "latest"
+        },
+        "emit_events": "false",
+        "no_merge": "false"
+      },
+      "schedule": "never",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Ubuntu Package Update steamcmd (yakkety)",
+      "disabled": false,
+      "guid": "5a1fe4f180e355e09a3fbcb12867a32d",
+      "options": {
+        "expected_update_period_in_days": "2",
+        "url": "http://packages.ubuntu.com/yakkety/steamcmd",
+        "type": "html",
+        "mode": "on_change",
+        "extract": {
+          "package": {
+            "css": "#content > h1",
+            "value": "string(.)"
+          }
+        }
+      },
+      "schedule": "every_1h",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::PostAgent",
+      "name": "Docker Hub build steamcmd xenial",
+      "disabled": false,
+      "guid": "63115d3e0b6fb8df0fdb62dcdf242a22",
+      "options": {
+        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/e921c7f3-69db-45a3-81de-b743a97e7d08/",
+        "expected_receive_period_in_days": "1",
+        "content_type": "json",
+        "method": "post",
+        "payload": {
+          "docker_tag": "xenial"
+        },
+        "emit_events": "false",
+        "no_merge": "false"
+      },
+      "schedule": "never",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::PostAgent",
+      "name": "Docker Hub build steamcmd yakkety",
+      "disabled": false,
+      "guid": "7cc39ce11d6dd5f3631a8b937d79e308",
+      "options": {
+        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/e921c7f3-69db-45a3-81de-b743a97e7d08/",
+        "expected_receive_period_in_days": "1",
+        "content_type": "json",
+        "method": "post",
+        "payload": {
+          "docker_tag": "yakkety"
+        },
+        "emit_events": "false",
+        "no_merge": "false"
+      },
+      "schedule": "never",
+      "keep_events_for": 604800,
+      "propagate_immediately": true
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Ubuntu Package Update steamcmd (xenial)",
+      "disabled": false,
+      "guid": "908359d8a8849f8d410c30dd6fa92301",
+      "options": {
+        "expected_update_period_in_days": "2",
+        "url": "http://packages.ubuntu.com/xenial/steamcmd",
+        "type": "html",
+        "mode": "on_change",
+        "extract": {
+          "package": {
+            "css": "#content > h1",
+            "value": "string(.)"
+          }
+        }
+      },
+      "schedule": "every_1h",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::PostAgent",
+      "name": "Docker Hub build steamcmd zesty",
+      "disabled": false,
+      "guid": "a81ecfc4c45d83c0fd3a817c8521b070",
+      "options": {
+        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/e921c7f3-69db-45a3-81de-b743a97e7d08/",
+        "expected_receive_period_in_days": "1",
+        "content_type": "json",
+        "method": "post",
+        "payload": {
+          "docker_tag": "zesty"
+        },
+        "emit_events": "false",
+        "no_merge": "false"
+      },
+      "schedule": "never",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Ubuntu Package Update steamcmd (zesty)",
+      "disabled": false,
+      "guid": "d4003216093955f29b3e9e4a74e3e4f0",
+      "options": {
+        "expected_update_period_in_days": "2",
+        "url": "http://packages.ubuntu.com/zesty/steamcmd",
+        "type": "html",
+        "mode": "on_change",
+        "extract": {
+          "package": {
+            "css": "#content > h1",
+            "value": "string(.)"
+          }
+        }
+      },
+      "schedule": "every_1h",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "receiver": 3
+    },
+    {
+      "source": 2,
+      "receiver": 0
+    },
+    {
+      "source": 4,
+      "receiver": 2
+    },
+    {
+      "source": 6,
+      "receiver": 5
+    }
+  ],
+  "control_links": [
+
+  ]
+}
