@@ -14,7 +14,7 @@ For detailed information about SteamCMD, please see [wiki](https://developer.val
 
 # Update Hooks
 
-* on ubuntu base image update (supported by Docker Hub)
+* on base image update (supported by Docker Hub)
 * on repository update (supported by Docker Hub)
 * on steamcmd package update (supported by [Huginn](https://github.com/Hackebein/docker-steamcmd/blob/master/huginn.json))
 
