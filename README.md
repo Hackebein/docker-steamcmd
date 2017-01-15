@@ -16,7 +16,7 @@ For detailed information about SteamCMD, please see [wiki](https://developer.val
 
 * on base image update (supported by Docker Hub)
 * on repository update (supported by Docker Hub)
-* on steamcmd package update (supported by [Huginn](https://github.com/Hackebein/docker-steamcmd/blob/master/huginn.json))
+* on steamcmd package update (supported by [Huginn.json](https://github.com/Hackebein/docker-steamcmd/blob/master/huginn.json))
 
 # Quick Start
 
