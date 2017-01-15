@@ -15,7 +15,7 @@
       "disabled": false,
       "guid": "1e7f09e5b40e1818f91a528ebed801df",
       "options": {
-        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/e921c7f3-69db-45a3-81de-b743a97e7d08/",
+        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/00000000-0000-0000-0000-000000000000/",
         "expected_receive_period_in_days": "1",
         "content_type": "json",
         "method": "post",
@@ -56,7 +56,7 @@
       "disabled": false,
       "guid": "63115d3e0b6fb8df0fdb62dcdf242a22",
       "options": {
-        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/e921c7f3-69db-45a3-81de-b743a97e7d08/",
+        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/00000000-0000-0000-0000-000000000000/",
         "expected_receive_period_in_days": "1",
         "content_type": "json",
         "method": "post",
@@ -76,7 +76,7 @@
       "disabled": false,
       "guid": "7cc39ce11d6dd5f3631a8b937d79e308",
       "options": {
-        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/e921c7f3-69db-45a3-81de-b743a97e7d08/",
+        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/00000000-0000-0000-0000-000000000000/",
         "expected_receive_period_in_days": "1",
         "content_type": "json",
         "method": "post",
@@ -117,7 +117,7 @@
       "disabled": false,
       "guid": "a81ecfc4c45d83c0fd3a817c8521b070",
       "options": {
-        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/e921c7f3-69db-45a3-81de-b743a97e7d08/",
+        "post_url": "https://registry.hub.docker.com/u/hackebein/steamcmd/trigger/00000000-0000-0000-0000-000000000000/",
         "expected_receive_period_in_days": "1",
         "content_type": "json",
         "method": "post",
