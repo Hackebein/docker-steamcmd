@@ -12,3 +12,4 @@ RUN dpkg --add-architecture i386 && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENTRYPOINT ["/usr/games/steamcmd"]
+ONBUILD ENTRYPOINT []
