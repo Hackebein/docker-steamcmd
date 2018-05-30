@@ -1,10 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
 * `artful` [(artful/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/artful/Dockerfile)
-* `xenial`, `latest` [(xenial/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/xenial/Dockerfile)
-* `yakkety` [(yakkety/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/yakkety/Dockerfile)
-* `zesty` [(zesty/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/zesty/Dockerfile)
-
+* `bionic`, `latest` [(bionic/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/bionic/Dockerfile)
+* `trusty` not supported
+* `xenial` [(xenial/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/xenial/Dockerfile)
 Tags switching between [Ubuntu](https://hub.docker.com/r/library/ubuntu/) base images.
 
 # What is SteamCMD?
