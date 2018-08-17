@@ -4,6 +4,7 @@
 * `cosmic` [(cosmic/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/cosmic/Dockerfile)
 * `trusty` not supported
 * `xenial` [(xenial/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/xenial/Dockerfile)
+
 Tags switching between [Ubuntu](https://hub.docker.com/r/library/ubuntu/) base images.
 
 # What is SteamCMD?
