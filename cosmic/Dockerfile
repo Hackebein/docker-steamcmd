@@ -9,7 +9,7 @@ RUN dpkg --add-architecture i386 \
  && echo debconf steam/question select I AGREE | debconf-set-selections \
  && apt-get install -y \
         language-pack-en \
-        lib32tinfo5 \
+        lib32tinfo6 \
         steamcmd \
  && apt-get clean \
  && rm -rf \
