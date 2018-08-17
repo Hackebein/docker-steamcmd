@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 * `bionic`, `latest` [(bionic/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/bionic/Dockerfile)
-* `cosmic` [(artful/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/artful/Dockerfile)
+* `cosmic` [(cosmic/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/cosmic/Dockerfile)
 * `trusty` not supported
 * `xenial` [(xenial/Dockerfile)](https://github.com/Hackebein/docker-steamcmd/blob/master/xenial/Dockerfile)
 Tags switching between [Ubuntu](https://hub.docker.com/r/library/ubuntu/) base images.
