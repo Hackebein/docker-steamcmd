@@ -17,7 +17,7 @@ RUN dpkg --add-architecture i386 \
         /var/lib/apt/lists/* \
         /var/tmp/* \
  && ln -s \
-        /usr/games/steamcmd \
+        /usr/lib/games/steam/steamcmd \
         /usr/local/bin/steamcmd
 
 ENTRYPOINT ["steamcmd"]
