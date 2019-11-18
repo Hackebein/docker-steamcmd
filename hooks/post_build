@@ -1,0 +1,11 @@
+#!/bin/bash
+set -eu
+
+echo "[***] post_build is running"
+
+cd "$(dirname "$(readlink -f "$0")")"
+cd ..
+. "hooks/env"
+
+echo "[***] Clear untagged Images"
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')

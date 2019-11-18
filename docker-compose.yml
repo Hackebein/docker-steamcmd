@@ -1,0 +1,25 @@
+version: '2.0'
+services:
+  bionic:
+    image: 'hackebein/steamcmd:bionic'
+    build:
+      context: builds/bionic
+  latest:
+    extends: bionic
+    image: 'hackebein/steamcmd:latest'
+  disco:
+    image: 'hackebein/steamcmd:disco'
+    build:
+      context: builds/disco
+  eoan:
+    image: 'hackebein/steamcmd:eoan'
+    build:
+      context: builds/eoan
+  focal:
+    image: 'hackebein/steamcmd:focal'
+    build:
+      context: builds/focal
+  xenial:
+    image: 'hackebein/steamcmd:xenial'
+    build:
+      context: builds/xenial
