@@ -1,25 +1,33 @@
 version: '2.0'
 services:
-  bionic:
-    image: 'hackebein/steamcmd:bionic'
+  16.04:
+    image: 'hackebein/steamcmd:16.04'
     build:
-      context: builds/bionic
-  latest:
-    extends: bionic
-    image: 'hackebein/steamcmd:latest'
-  disco:
-    image: 'hackebein/steamcmd:disco'
-    build:
-      context: builds/disco
-  eoan:
-    image: 'hackebein/steamcmd:eoan'
-    build:
-      context: builds/eoan
-  focal:
-    image: 'hackebein/steamcmd:focal'
-    build:
-      context: builds/focal
+      context: builds/16.04
   xenial:
+    extends: '16.04'
     image: 'hackebein/steamcmd:xenial'
+  18.04:
+    image: 'hackebein/steamcmd:18.04'
     build:
-      context: builds/xenial
+      context: builds/18.04
+  bionic:
+    extends: '18.04'
+    image: 'hackebein/steamcmd:bionic'
+  latest:
+    extends: '18.04'
+    image: 'hackebein/steamcmd:latest'
+  19.10:
+    image: 'hackebein/steamcmd:19.10'
+    build:
+      context: builds/19.10
+  eoan:
+    extends: '19.10'
+    image: 'hackebein/steamcmd:eoan'
+  20.04:
+    image: 'hackebein/steamcmd:20.04'
+    build:
+      context: builds/20.04
+  focal:
+    extends: '20.04'
+    image: 'hackebein/steamcmd:focal'
