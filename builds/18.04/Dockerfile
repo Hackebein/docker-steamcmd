@@ -20,7 +20,8 @@ RUN dpkg --add-architecture i386 \
  && apt upgrade -y \
  && apt clean \
  && rm -rf \
-        /var/lib/apt/lists/*
+        /var/lib/apt/lists/* \
+ && chmod 755 /opt/steamcmd/steamcmd.sh
 COPY --from=base /app /opt/steamcmd
 WORKDIR /opt/steamcmd
 ENTRYPOINT ["steamcmd"]
