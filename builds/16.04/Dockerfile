@@ -21,9 +21,7 @@ RUN dpkg --add-architecture i386 \
  && apt upgrade -y \
  && apt clean \
  && rm -rf \
-        /var/lib/apt/lists/* \
- && chown -Rc root:root /opt/steamcmd \
- && chmod 755 /opt/steamcmd/steamcmd.sh
+        /var/lib/apt/lists/*
 WORKDIR /opt/steamcmd
 ENTRYPOINT ["steamcmd"]
 ONBUILD ENTRYPOINT []
