@@ -21,6 +21,7 @@ RUN dpkg --add-architecture i386 \
  && apt clean \
  && rm -rf \
         /var/lib/apt/lists/* \
+ && chown -Rc root:root /opt/steamcmd \
  && chmod 755 /opt/steamcmd/steamcmd.sh
 COPY --from=base /app /opt/steamcmd
 WORKDIR /opt/steamcmd
