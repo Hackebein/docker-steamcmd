@@ -11,6 +11,7 @@ FROM ubuntu:20.04
 MAINTAINER Lars Olzem <hackebein@gmail.com>
 ENV DEBIAN_FRONTEND=noninteractive \
     PATH=$PATH:/opt/steamcmd
+COPY --from=base /app /opt/steamcmd
 RUN dpkg --add-architecture i386 \
  && apt-get update \
  && apt-get install -y --no-install-recommends --no-install-suggests \
@@ -23,7 +24,6 @@ RUN dpkg --add-architecture i386 \
         /var/lib/apt/lists/* \
  && chown -Rc root:root /opt/steamcmd \
  && chmod 755 /opt/steamcmd/steamcmd.sh
-COPY --from=base /app /opt/steamcmd
 WORKDIR /opt/steamcmd
 ENTRYPOINT ["steamcmd"]
 ONBUILD ENTRYPOINT []
