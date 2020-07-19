@@ -5,6 +5,7 @@ RUN apk add --update --no-cache \
  && mkdir -p /app \
  && wget --no-verbose 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' -O '/tmp/steamcmd_linux.tar.gz' \
  && tar -C /app -xf '/tmp/steamcmd_linux.tar.gz' \
+ && chmod a+x /app/steamcmd.sh \
  && ln -s steamcmd.sh /app/steamcmd
 
 FROM ubuntu:18.04
