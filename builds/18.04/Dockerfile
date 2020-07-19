@@ -22,7 +22,8 @@ RUN dpkg --add-architecture i386 \
  && apt upgrade -y \
  && apt clean \
  && rm -rf \
-        /var/lib/apt/lists/*
+        /var/lib/apt/lists/* \
+ && touch /docker.push.tag.force
 WORKDIR /opt/steamcmd
 ENTRYPOINT ["steamcmd"]
 ONBUILD ENTRYPOINT []
