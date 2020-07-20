@@ -5,7 +5,6 @@ RUN apk add --update --no-cache \
  && mkdir -p /app \
  && wget --no-verbose 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' -O '/tmp/steamcmd_linux.tar.gz' \
  && tar -C /app -xf '/tmp/steamcmd_linux.tar.gz' \
- && chmod a+x /app/steamcmd.sh \
  && ln -s steamcmd.sh /app/steamcmd
 
 FROM ubuntu:19.10
@@ -22,7 +21,8 @@ RUN dpkg --add-architecture i386 \
  && apt upgrade -y \
  && apt clean \
  && rm -rf \
-        /var/lib/apt/lists/*
+        /var/lib/apt/lists/* \
+ && chmod a+x /app/steamcmd.sh
 WORKDIR /opt/steamcmd
 ENTRYPOINT ["steamcmd"]
 ONBUILD ENTRYPOINT []
