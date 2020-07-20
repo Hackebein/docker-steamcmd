@@ -22,7 +22,7 @@ RUN dpkg --add-architecture i386 \
  && apt clean \
  && rm -rf \
         /var/lib/apt/lists/* \
- && chmod a+x /opt/steamcmd/steamcmd.sh
+ && find /opt/steamcmd -type f -executable -exec chmod a+x {} \;
 WORKDIR /opt/steamcmd
 ENTRYPOINT ["steamcmd"]
 ONBUILD ENTRYPOINT []
