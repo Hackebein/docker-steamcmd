@@ -8,7 +8,6 @@ RUN apk add --update --no-cache \
  && ln -s steamcmd.sh /app/steamcmd
 
 FROM ubuntu:18.04
-MAINTAINER Lars Olzem <hackebein@gmail.com>
 ENV DEBIAN_FRONTEND=noninteractive \
     PATH=$PATH:/opt/steamcmd
 COPY --from=base /app /opt/steamcmd
