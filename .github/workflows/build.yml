@@ -22,8 +22,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
-        context: linux
-        file: builds/16.04/Dockerfile
+        context: builds/16.04
         push: 'true'
         platforms: linux/amd64
         tags: hackebein/steamcmd:16.04,hackebein/steamcmd:xenial
@@ -43,8 +42,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
-        context: linux
-        file: builds/18.04/Dockerfile
+        context: builds/18.04
         push: 'true'
         platforms: linux/amd64
         tags: hackebein/steamcmd:18.04,hackebein/steamcmd:bionic
@@ -64,8 +62,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
-        context: linux
-        file: builds/20.04/Dockerfile
+        context: builds/20.04
         push: 'true'
         platforms: linux/amd64
         tags: hackebein/steamcmd:20.04,hackebein/steamcmd:focal
@@ -85,8 +82,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
-        context: linux
-        file: builds/22.04/Dockerfile
+        context: builds/22.04
         push: 'true'
         platforms: linux/amd64
         tags: hackebein/steamcmd:22.04,hackebein/steamcmd:jammy,hackebein/steamcmd:latest
